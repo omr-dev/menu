@@ -5,14 +5,15 @@ type PropsHeader={
     setFilter:(filter:string)=>void;
 }
 const Header = ({setFilter,filter}:PropsHeader) => {
-    const categories=(()=>{
+/*    const categories=(()=>{
         let _categories:string[]=["all"];
         menu.map((m)=>{
             if(!_categories.includes(m.category)) _categories.push(m.category);
 
         });
         return _categories;
-    })();
+    })();*/
+    const categories=['all',...new Set(menu.map((m)=>m.category))];
     return (
         <div className={styles.header}>
             <div className={styles.titleBar}>
