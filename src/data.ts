@@ -1,4 +1,13 @@
-const menu = [
+export type MenuItem={
+    title:string;
+    id:number;
+    category:string;
+    price:number;
+    img:string;
+    desc:string;
+
+}
+const menu:MenuItem[] = [
     {
         id: 1,
         title: 'buttermilk pancakes',

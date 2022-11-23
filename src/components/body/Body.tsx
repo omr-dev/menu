@@ -1,12 +1,12 @@
 import Item from '../item/Item';
 import styles from './body.module.css';
+import menu from '../../data';
 
 const Body = () => {
     return (
         <div className={styles.bodyContainer}>
-            <Item/>
-            <Item/>
-            <Item/>
+            {menu.map((m)=><Item {...m}/>)}
+
 
         </div>
     );
