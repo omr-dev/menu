@@ -1,0 +1,39 @@
+.itemContainer{
+    display: flex;
+
+    max-width: 64rem;
+    gap:2rem;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+.infoHeader{
+    font-weight: 700;
+    border-bottom: 1px solid var(--clr-grey-5);
+}
+.title{
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    text-transform: capitalize;
+}
+.price{
+    color: var(--clr-gold);
+}
+.infoHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    width: 225px;
+    height: 150px;
+    object-fit: cover;
+    border:0.4rem solid var(--clr-gold);
+    border-radius: 0.4rem;
+}
+.infoText{
+    color: var(--clr-grey-5);
+    line-height: 2.4rem;
+}
